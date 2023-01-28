@@ -1,0 +1,59 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+       ul  
+         div#logo 
+            img(src="/static/danlogo.png")
+            |  HDA
+         li #[a(href="/") Home]
+         li #[a(href="/") Contact Us]
+         li #[a(href="/") Services] 
+         li #[a(href="/") About]
+         li #[a(href="/") Class Info]
+   
+    section#introSection
+        div Welcome to Sakshi's dance academy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+           h3 Dance Perfection
+           div.card-box 
+              div.card-img 
+                img(src="/static/s3.jpg")
+              div.card-content
+                p this is the best dance academy 
+
+        div.card
+           h3 Dance the way you like
+           div.card-box 
+              div.card-img 
+               img(src="/static/f22.jpg")
+              div.card-content
+                p The joy of learning best 
+        div.card
+           h3 Expert Teaching 
+           div.card-box 
+              div.card-img 
+                 img(src="/static/san.jpg")
+              div.card-content
+                  p Adorn your hobby with dance
+
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors 
+           img(src="/static/micro.png",alt="Sponsor image",class="spimage")
+           img(src="/static/sky.png",alt="Sponsor image",class="spimage")
+           img(src="/static/apple.png",alt="Sponsor image",class="spimage")
+           img(src="/static/hp.png",alt="Sponsor image",class="spimage")
+
+    footer#footer 
+        | Copyright 2019 SakshiDanceAcademy.com                             
+    script
+      include ../static/index.js
